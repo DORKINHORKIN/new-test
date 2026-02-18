@@ -40,7 +40,7 @@ jobs:
         run: bun install  # Remove if no package.json
 
       - name: Build with Bun
-        run: bun build ./src/index.tsx --outdir ./dist --target browser  # Adjust entry point and options as needed (e.g., --minify, or use bun run build if you have a script)
+        run: bun run build  # Adjust entry point and options as needed (e.g., --minify, or use bun run build if you have a script)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
